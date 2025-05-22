@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f2f2f0;
+    font-family: arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f0;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/*------ LOGO -----*/
+.logo {
+    height: 80px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+/*----- MENU -----*/
+.menu {
+    width: 900px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/*----- ESPECIFICDADE -----*/
+.menu ul li a {
+    padding: 10px 40px;
+    color: #731f17;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    transition: 0.5s;
+    text-decoration: 1px underline #731f17;
+    font-size: 16.5px;
+}
+
+/*----- SEÇÃO HOME -----*/
+.linha_home {
+    border: 1px solid black;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(trattoria_home.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    border: 1px solid black;
+    width: 1200px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+/*----- SEÇÕES -----*/
+.linha {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid #731f17;
+    display: flex;
+    justify-content: center;
+}
+
+/*----- RODAPÉ -----*/
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #f2f2f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rod_logo {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.rod_logo img {
+    height: 200px;
+}
+
+.colu_rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    border: 1px solid black;
+
+}
+
+.local {
+    height: auto;
+    width: 85%;
+}
+
+.social_media {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.social_media img { 
+    height: 100px;
+}
+
+/*LARGURA DO MONITOR 1920px
+LARGURA DO CARDAPIO 1200px (para sobrar)
+ALTURA HEADER 120px
+ÁREAS DO SITE 100vh
+
+*/
